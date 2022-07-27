@@ -42,3 +42,37 @@
     color: rgba(100, 238, 100, 0.735);
 }
 
+.user-info {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+
+.user-info-last-games h3 {
+    color: white;
+    opacity: 0.7;
+    font-size: 3rem;
+    padding: 20px;
+}
+
+.wins-losses {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.wins-losses p {
+    font-size: 4.5rem;
+}
+
+.wins-losses .win {
+    color: rgba(100, 238, 100, 0.735);
+}
+
+.wins-losses .loss {
+    color: rgb(255, 59, 59);
+}
+
+.user-info-profile {
+    border: dotted white 1px;
+}
+

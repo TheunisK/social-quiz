@@ -24,12 +24,12 @@ function UserHome() {
                 <div className="user-info">
                     <div className="user-info-last-games">
                         <h3>Last 5 Games:</h3>
-                        <div>
-                            <p>W</p>
-                            <p>L</p>
-                            <p>L</p>
-                            <p>W</p>
-                            <p>W</p>
+                        <div className="wins-losses">
+                            <p className="win">W</p>
+                            <p className="loss">L</p>
+                            <p className="loss">L</p>
+                            <p className="win">W</p>
+                            <p className="win">W</p>
                         </div>
                     </div>
                     <div className="user-info-profile">
