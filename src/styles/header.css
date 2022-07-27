@@ -1,0 +1,36 @@
+.header-container-wrapper {
+    position: relative;
+    height: 70px;
+    border-bottom: 1px solid rgba(100, 238, 100, 0.735);
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.header-container {
+    height: 70px;
+    width: 100%;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+
+.navBar-left,
+.navBar-right {
+    margin: 5px;
+}
+
+.navBar-left {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-link {
+    color: rgb(255, 255, 255);
+    opacity: 0.7;
+}
+
+.nav-link:hover {
+    cursor: pointer;
+    opacity: 1;
+}
