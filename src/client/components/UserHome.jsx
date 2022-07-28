@@ -1,6 +1,9 @@
 import "../../styles/userHome.css";
 
+import image from "../../assets/images/profile-pic-test.png";
+
 import Header from "./Header";
+import Quiz from "./Quiz";
 
 function UserHome() {
     return (
@@ -23,13 +26,33 @@ function UserHome() {
                 </div>
                 <div className="user-info">
                     <div className="user-info-last-games">
-                        <h3>Last 5 Games:</h3>
+                        <h3>Recent Games:</h3>
                         <div className="wins-losses">
-                            <p className="win">W</p>
-                            <p className="loss">L</p>
-                            <p className="loss">L</p>
-                            <p className="win">W</p>
-                            <p className="win">W</p>
+                            <div className="recent-opponent">
+                                <p className="win">W</p>
+                                <p>Theunis Tansie</p>
+                                <img src={image} alt={"profile"} width={40} height={40}/>
+                            </div>
+                            <div className="recent-opponent">
+                                <p className="loss">L</p>
+                                <p>Adam Knoetze</p>
+                                <img src={image} alt={"profile"} width={40} height={40}/>
+                            </div>
+                            <div className="recent-opponent">
+                                <p className="loss">L</p>
+                                <p>Timmy White</p>
+                                <img src={image} alt={"profile"} width={40} height={40}/>
+                            </div>
+                            <div className="recent-opponent">
+                                <p className="win">W</p>
+                                <p>Hailey Reed</p>
+                                <img src={image} alt={"profile"} width={40} height={40}/>
+                            </div>
+                            <div className="recent-opponent">
+                                <p className="win">W</p>
+                                <p>Dustin Dingleman</p>
+                                <img src={image} alt={"profile"} width={40} height={40}/>
+                            </div>
                         </div>
                     </div>
                     <div className="user-info-profile">
@@ -37,6 +60,7 @@ function UserHome() {
                     </div>
                 </div>
             </div>
+            <Quiz />
         </div>
     )
 }
